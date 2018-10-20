@@ -1,0 +1,12 @@
+##############################################################
+# VK Group
+##############################################################
+- Name: VKAndroid
+  BuildScript: ./VK.Android/build.cake
+  TriggerPaths: [ VK.Android ]
+  MacBuildTargets: [ samples, nuget, component ]
+  WindowsBuildTargets: [ samples, nuget, component ]
+- Name: VKiOS
+  BuildScript: ./VK.iOS/build.cake
+  TriggerPaths: [ VK.iOS ]
+  MacBuildTargets: [ samples, nuget, component ]

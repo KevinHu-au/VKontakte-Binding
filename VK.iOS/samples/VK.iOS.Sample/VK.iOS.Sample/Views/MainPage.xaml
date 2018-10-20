@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:VK.iOS.Sample.Converters"
+             x:Class="VK.iOS.Sample.Views.MainPage" 
+             Title="{Binding Title}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:InvertBooleanConverter x:Key="InvertBooleanConverter"/>
+        </ResourceDictionary>        
+    </ContentPage.Resources>
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Label Text="Welcome to Xamarin Forms and Prism!" />
+        <Button Text="VK Login" 
+                Command="{Binding VKLoginCommand}"
+                IsVisible="{Binding IsLogedIn, Converter={StaticResource InvertBooleanConverter}}"/>
+
+        <Button Text="Logout" 
+                Command="{Binding VKLogoutCommand}" 
+                IsVisible="{Binding IsLogedIn}" />
+        
+        <Image Source="{Binding VKUser.Picture}" 
+               IsVisible="{Binding IsLogedIn}"/>
+        
+        <Label Text="{Binding VKUser.Name}" 
+               IsVisible="{Binding IsLogedIn}"/>
+
+        <Label Text="{Binding VKUser.Email}" 
+               IsVisible="{Binding IsLogedIn}"/>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VK.Android.Sample", "VK.Android.Sample\VK.Android.Sample.csproj", "{91450403-F718-41B7-900A-EE59987538F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VK.Android.Sample.Android", "VK.Android.Sample.Android\VK.Android.Sample.Android.csproj", "{35D0D09D-083F-4955-A1FA-18E83EE71090}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VK.Android", "..\..\source\VK.Android\VK.Android.csproj", "{B0EE07B0-9B92-44B1-AEF7-64569BF4E6A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91450403-F718-41B7-900A-EE59987538F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91450403-F718-41B7-900A-EE59987538F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91450403-F718-41B7-900A-EE59987538F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91450403-F718-41B7-900A-EE59987538F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35D0D09D-083F-4955-A1FA-18E83EE71090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35D0D09D-083F-4955-A1FA-18E83EE71090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35D0D09D-083F-4955-A1FA-18E83EE71090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35D0D09D-083F-4955-A1FA-18E83EE71090}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0EE07B0-9B92-44B1-AEF7-64569BF4E6A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0EE07B0-9B92-44B1-AEF7-64569BF4E6A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0EE07B0-9B92-44B1-AEF7-64569BF4E6A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0EE07B0-9B92-44B1-AEF7-64569BF4E6A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
